@@ -287,10 +287,9 @@ typedef struct hwc_layer_1 {
              */
             hwc_region_t surfaceDamage;
 
-#ifdef QTI_BSP
+            /* QTI_BSP */
             /* Color for Dim Layer */
             hwc_color_t color;
-#endif
         };
     };
 
@@ -800,3 +799,4 @@ static inline int hwc_close_1(hwc_composer_device_1_t* device) {
 __END_DECLS
 
 #endif /* ANDROID_INCLUDE_HARDWARE_HWCOMPOSER_H */
+
